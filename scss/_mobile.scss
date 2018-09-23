@@ -1,0 +1,87 @@
+//  large screen
+@include mediaXl {
+
+}
+
+//  lappy and desky screen
+@include mediaLg {
+    
+}
+
+//  large screen
+@include mediaMd {
+    body:after{
+        background: rgba(1,1,0,0.9)
+    }
+    
+    main{
+        align-items: center;
+        text-align: center;
+
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+            font-size: 20px;
+        }
+    }
+
+    .menu-nav,.menu-branding{
+        float:none;
+        width:100%;
+        min-height: 0;
+
+        &.show{
+            transform: translate3d(0,0,0)
+        }
+    }
+
+    .menu-nav {
+        height: 70vh;
+        transform: translate3d(-100%, 0,0);
+        font-size: 24px;
+        background: black;
+    }
+
+    .menu-branding {
+        height: 30vh;
+        transform: translate3d(100%, 0,0);
+        font-size: 24px;
+        background: black;
+        .portrait {
+            width: 150px;
+            height:150px;
+        }
+    }
+
+    .aboutMe,.work,.contact {
+        height: 100px;
+        background: red;
+        position: none;
+        width: 100% !important;
+        z-index: 2;
+        padding: 2rem !important;
+        .md-heading {
+            margin-top: 20%;
+            font-size: 3rem;
+            font-weight: 100;
+        }
+
+    }
+    
+
+    
+    
+}
+
+//  mobile screen
+@include mediaSm {
+    .aboutMe,.work,.contact {
+        height: 100px;
+        background: red;
+        position: relative;
+        width: 100%;
+        &.content{
+            width: 100%;
+        }
+    }
+}

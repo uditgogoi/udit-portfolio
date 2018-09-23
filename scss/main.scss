@@ -1,5 +1,18 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
+
+@font-face {
+    font-family: 'aileron';
+    src: url('aileron/aileron-Heavy.otf');
+    src: url('aileron/aileron-Regular.otf');
+    src: url('aileron/aileron-Thin.otf');
+    src: url('aileron/aileron-Bold.otf');
+    src: url('aileron/aileron-Light.otf');
+    src: url('aileron/Aileron-UltraLight.otf');
+
+
+}
 
 * {
     box-sizing: border-box;
@@ -7,40 +20,55 @@
 
 body {
     @include background;
-    color: #fff;
+    color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma , Geneva, Verdana, sans-serif;
+    font-family: 'aileron-Regular', sans-serif;
     line-height: 1.5;
 }
 
 // heading
 h1,h2,h3 {
     margin:0;
-    font-weight: 400;
+    font-weight: 200;
     &.lg-heading {
         font-size: 6rem;
     }
     &.sm-heading {
         margin-bottom: 2rem;
         padding:0.2rem 1rem;
-        background: rgba(lighten($primary-color,2),0.5);
+        // background: rgba(lighten($primary-color,2),0.5);
+    }
+    &.md-heading {
+        font-size: 4rem;
+        text-align: center;
     }
 }
 
 a{
     color: white;
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
 }
+
 
 header {
     position:fixed;
-    z-index:2;
+    z-index:3;
     width:100%;
 }
 
 .text-color-sec {
     color: $secondary-color;
+}
+
+.para{
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.9em;
+    color: rgb(240, 235, 235);
 }
 
 main{
@@ -62,6 +90,51 @@ main{
         overflow: hidden;
         h1{
             margin-top: 20vh;
+        }
+    }
+}
+
+.aboutMe,.work,.contact {
+    display: block;
+    padding: 4rem;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    overflow-y:scroll;
+    z-index: 4;
+    width: 50%;
+    background:$primary-color;
+    transform: translate3d(-200%,0,0);
+     @include fade();
+     &.show-section {
+        transform: translate3d(0,0,0);
+    }
+    &.fade {
+        opacity: 0;
+    }
+    
+}
+
+.menu-btn-content {
+    font-size: 24px;
+    font-weight: 100px;
+    position: absolute;
+    right: 40px;
+    top:40px;
+    cursor: pointer;
+    .menu-btn-content-line {
+        width: 30px;
+        height: 3px;
+        position: relative;;
+        z-index: 5;
+        margin: 0 0 5px 0;
+        background: set-text-color($primary-color);
+        &:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 10px)
+        }
+        &:nth-child(2) {
+            transform: rotate(-45deg) translate(-5px, 4px)
         }
     }
 }

@@ -8,7 +8,9 @@
     <title>Welcome to my portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -27,23 +29,18 @@
                 </div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item current-page">
-                    <a href="/" class="nav-link">
-                        Home
-                    </a>
-                </li>
                 <li class="nav-item">
-                    <a href="/about.html" class="nav-link">
+                    <a class="nav-link" onclick="showDiv('about')">
                         About me
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/work.html" class="nav-link">
+                    <a class="nav-link" onclick="showDiv('work')">
                         My Work
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/contact.html" class="nav-link">
+                    <a class="nav-link" onclick="showDiv('contact')">
                         Reach me
                     </a>
                 </li>
@@ -74,6 +71,35 @@
         </div>
 
     </main>
+
+    <!-- Other sections -->
+    <section class="aboutMe">
+        <div class="menu-btn-content">
+            <div class="menu-btn-content-line"></div>
+            <div class="menu-btn-content-line"></div>
+        </div>
+        <h1 class="md-heading">About <span class="text-color-sec">me</span></h1>
+        <p class="para">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+    </section>
+
+    <section class="work">
+        <div class="menu-btn-content">
+            <div class="menu-btn-content-line"></div>
+            <div class="menu-btn-content-line"></div>
+        </div>
+        <h1 class="md-heading">My <span class="text-color-sec">Work</span></h1>
+    </section>
+
+    <section class="contact">
+        <div class="menu-btn-content">
+            <div class="menu-btn-content-line"></div>
+            <div class="menu-btn-content-line"></div>
+        </div>
+        <h1 class="md-heading">Reach <span class="text-color-sec">me</span></h1>
+    </section>
     <script src="js/main.js"></script>
 </body>
 

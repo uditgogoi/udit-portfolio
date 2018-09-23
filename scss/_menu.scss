@@ -1,7 +1,7 @@
 // button
 .menu-btn {
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     right: 40px;
     top:40px;
     cursor: pointer;
@@ -10,8 +10,10 @@
     .btn-line {
         width: 30px;
         height: 3px;
+        position: relative;;
+        z-index: 5;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut();
 
     }
@@ -69,7 +71,7 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: rgba(darken($primary-color, 5),.8);
+        background: rgba(darken($primary-color, 5),.9);
         list-style: none;
         transform: translate3d(0,-100%,0);
         @include easeOut();
@@ -125,7 +127,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration:none;
         @include easeOut();
 
