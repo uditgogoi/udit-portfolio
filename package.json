@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Udit Portfolio Website",
   "main": "index.js",
+  "homepage": "https://uditgogoi.github.io/udit-portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ -- recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ -- recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Udit Gogoi",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.9.3"
   }
 }
