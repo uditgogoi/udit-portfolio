@@ -132,9 +132,7 @@
     .aboutMe .md-heading, .work .md-heading, .contact .md-heading {
       margin-top: 20%;
       font-size: 3rem;
-      font-weight: 100; }
-  .content .menu-btn-content {
-    visibility: visible !important; } }
+      font-weight: 100; } }
 
 @media screen and (max-width: 500px) {
   .aboutMe, .work, .contact {
@@ -147,6 +145,11 @@
 
 @font-face {
   font-family: 'aileron';
+  src: url("aileron/aileron-Heavy.otf");
+  src: url("aileron/aileron-Regular.otf");
+  src: url("aileron/aileron-Thin.otf");
+  src: url("aileron/aileron-Bold.otf");
+  src: url("aileron/aileron-Light.otf");
   src: url("aileron/Aileron-UltraLight.otf"); }
 
 * {
@@ -159,7 +162,7 @@ body {
   color: #ffffff;
   height: 100%;
   margin: 0;
-  font-family: 'aileron', sans-serif;
+  font-family: 'aileron-Regular', sans-serif;
   line-height: 1.5; }
   body:after {
     content: '';
@@ -198,14 +201,13 @@ header {
   color: #f18102; }
 
 .para {
-  font-family: 'aileron', sans-serif;
-  font-weight: 200;
-  font-size: 22px;
+  font-weight: lighter;
+  font-size: 18px;
   line-height: 1.9em;
   color: #f0ebeb; }
 
 .contact-me-details {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   text-align: center;
   font-weight: 100; }
 

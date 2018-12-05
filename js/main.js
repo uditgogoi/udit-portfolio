@@ -10,6 +10,7 @@ const navItems= document.querySelectorAll('.nav-item')
 const sectionAbout= document.querySelector('.aboutMe')
 const sectionWork= document.querySelector('.work')
 const sectionContact= document.querySelector('.contact')
+const closeSection = document.querySelector('.menu-btn-content');
 
 
 // initial stage of menu
@@ -20,6 +21,7 @@ let showAbout= showContact= showWork= false;
 
 // Close section
 
+closeSection.addEventListener("click", closeAllSec);
 
 function showDiv(value) {
     // navLink.classList.add('current-page')
