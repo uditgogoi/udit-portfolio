@@ -54,7 +54,7 @@
     }
 
     .aboutMe,.work,.contact {
-        height: 100px;
+        height: 100vh;
         background: red;
         position: none;
         width: 100% !important;
@@ -76,7 +76,7 @@
 //  mobile screen
 @include mediaSm {
     .aboutMe,.work,.contact {
-        height: 100px;
+        height: 100vh;
         background: red;
         position: relative;
         width: 100%;
