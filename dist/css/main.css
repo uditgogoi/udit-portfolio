@@ -195,7 +195,8 @@ a {
 header {
   position: fixed;
   z-index: 3;
-  width: 100%; }
+  width: 100%;
+  height: 100vh; }
 
 .text-color-sec {
   color: #f18102; }
