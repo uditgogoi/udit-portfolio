@@ -54,7 +54,7 @@
     }
 
     .aboutMe,.work,.contact {
-        height: 100vh;
+        height: 100vh !important;
         background: red;
         position: none;
         width: 100% !important;

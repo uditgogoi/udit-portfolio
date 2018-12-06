@@ -103,7 +103,7 @@ main{
 .aboutMe,.work,.contact {
     display: block;
     padding: 4rem;
-    height: 100vh;
+    height: 100vh !important;
     top:0;
     left:0;
     position: absolute;
