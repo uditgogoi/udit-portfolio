@@ -132,7 +132,9 @@
     .aboutMe .md-heading, .work .md-heading, .contact .md-heading {
       margin-top: 20%;
       font-size: 3rem;
-      font-weight: 100; } }
+      font-weight: 100; }
+  .works-screenshot {
+    flex-direction: column; } }
 
 @media screen and (max-width: 500px) {
   .aboutMe, .work, .contact {
@@ -196,7 +198,7 @@ header {
   position: fixed;
   z-index: 3;
   width: 100%;
-  }
+  height: 100vh; }
 
 .text-color-sec {
   color: #f18102; }
@@ -234,7 +236,7 @@ main {
   top: 0;
   left: 0;
   position: absolute;
-  overflow-y: scroll;
+  overflow: auto;
   z-index: 4;
   width: 50%;
   background: #2c2c2c;
@@ -244,6 +246,22 @@ main {
     transform: translate3d(0, 0, 0); }
   .aboutMe.fade, .work.fade, .contact.fade {
     opacity: 0; }
+
+.works-screenshot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3em; }
+  .works-screenshot .screenshot {
+    flex-basis: 45%; }
+  .works-screenshot img {
+    max-width: 100%; }
+  .works-screenshot .project-details {
+    flex-basis: 45%; }
+    .works-screenshot .project-details h2 {
+      font-weight: bolder; }
+      .works-screenshot .project-details h2 :hover {
+        text-decoration: underline; }
 
 .menu-btn-content {
   font-size: 24px;

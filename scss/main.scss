@@ -107,7 +107,7 @@ main{
     top:0;
     left:0;
     position: absolute;
-    overflow-y:scroll;
+    overflow:auto;
     z-index: 4;
     width: 50%;
     background:$primary-color;
@@ -120,6 +120,29 @@ main{
         opacity: 0;
     }
     
+}
+
+.works-screenshot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+    .screenshot {
+        flex-basis: 45%;
+    }
+    img {
+        max-width: 100%;
+    }
+    .project-details {
+        flex-basis: 45%;
+        h2 {
+            font-weight: bolder;
+            :hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
 }
 
 .menu-btn-content {
