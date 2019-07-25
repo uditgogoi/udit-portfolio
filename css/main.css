@@ -211,8 +211,12 @@ header {
 
 .contact-me-details {
   font-size: 1.5em;
-  text-align: center;
-  font-weight: 100; }
+  font-weight: 100;
+  display: flex;
+  align-content: center;
+  margin-top: 2em; }
+  .contact-me-details .contact-content {
+    padding-left: 1em; }
 
 main {
   padding: 4rem;
@@ -225,7 +229,9 @@ main {
         color: #f18102;
         transition: all 0.3s ease-out; }
   main#home {
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative;
+    z-index: 99999; }
     main#home h1 {
       margin-top: 20vh; }
 
