@@ -122,6 +122,8 @@
     .menu-branding .portrait {
       width: 150px;
       height: 150px; }
+  #home {
+    padding-top: 3em; }
   .aboutMe, .work, .contact {
     height: 100vh !important;
     background: red;
