@@ -17,7 +17,7 @@
     main{
         align-items: center;
         text-align: center;
-
+        padding: 0;
         .lg-heading{
             line-height: 1;
             margin-bottom: 1rem;
@@ -53,6 +53,10 @@
         }
     }
 
+    #home {
+        padding-top: 3em;
+    }
+
     .aboutMe,.work,.contact {
         height: 100vh !important;
         background: red;
@@ -80,11 +84,14 @@
 @include mediaSm {
     .aboutMe,.work,.contact {
         height: 100vh;
-        background: red;
         position: relative;
         width: 100%;
         &.content{
             width: 100%;
         }
+    }
+
+    #home{
+         padding: 0;    
     }
 }
